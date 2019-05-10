@@ -21,13 +21,12 @@ p = zeros(size(X, 1), 1);
 %       can use max(A, [], 2) to obtain the max for each row.
 %
 
-
-
-
-
-
-
-
+X = [ones(1, m); X']; % X is a (401, 5000) matrix now
+a2 = sigmoid(Theta1 * X); % (25, 5000) matrix
+a2 = [ones(1, size(a2, 2)); a2]; % ?26, 5000) matrix
+a3 = sigmoid(Theta2 * a2); % (10, 5000) matrix
+[~, ind] = max(a3, [], 1); % perform max on the first dimension (per column)
+p = ind';
 
 % =========================================================================
 
