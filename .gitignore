@@ -1,5 +1,7 @@
 *.pdf
 lib/
-*data*.txt
+*data
+*.mat
+*.txt
 token.mat
 submit.m
