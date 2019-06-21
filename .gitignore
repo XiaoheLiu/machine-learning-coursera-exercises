@@ -5,3 +5,4 @@ lib/
 *.txt
 token.mat
 submit.m
+*.png
